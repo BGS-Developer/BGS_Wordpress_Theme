@@ -1,7 +1,8 @@
+<?php
 /*
 *WP Post Template: Шаблон для новых записей
 */
-<?php get_header();?>
+ get_header();?>
 
 <?php
 
