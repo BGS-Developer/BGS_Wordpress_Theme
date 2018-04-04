@@ -1,0 +1,160 @@
+
+
+//BGS css templates
+
+  //Alignment--------------
+    .flex{
+      &-start{
+        display: flex; justify-content: flex-start;
+      }
+      &-end{
+        display: flex; justify-content: flex-end;
+      }
+      &-between{
+        display: flex; justify-content: space-between;
+      }
+      &-around{
+        display: flex; justify-content: space-around;
+      }
+      &-center{
+        display: flex; justify-content: center;
+        &-center{
+          align-items: center;
+        }
+      }
+    }
+  //Container---------------
+    .container{
+      width:1170px;
+      margin:0 auto;
+      padding:0 15px;
+    }
+    @media(max-width:1200px){
+      .container{width:80%;}
+    }
+    @media(max-width:768px){
+      .container{width:90%;}
+    }
+    @media(max-width:480px){
+      .container{width:94%;}
+    }
+  //Grid--------------------
+    .st{
+      &-12{width:100%;}
+      &-11{width:91.66666%;}
+      &-10{width:83.33333%;}
+      &-9{width:75%;}
+      &-8{width:66.66666%;}
+      &-7{width:58.33333%;}
+      &-6{width:50%;}
+      &-5{width:41.66666%;}
+      &-4{width:33.33333%;}
+      &-3{width:25%;}
+      &-2{width:16.66666%;}
+      &-1{width:8.33333%;}
+    }
+    //Desktop small
+    @media(max-width:1200px) and (min-width:992px){
+      .md{
+        &-12{width:100%;}
+        &-11{width:91.66666%;}
+        &-10{width:83.33333%;}
+        &-9{width:75%;}
+        &-8{width:66.66666%;}
+        &-7{width:58.33333%;}
+        &-6{width:50%;}
+        &-5{width:41.66666%;}
+        &-4{width:33.33333%;}
+        &-3{width:25%;}
+        &-2{width:16.66666%;}
+        &-1{width:8.33333%;}
+      }
+    }
+    //Tabled
+    @media(max-width:991px) and (min-width:769px){
+      .sm{
+        &-12{width:100%;}
+        &-11{width:91.66666%;}
+        &-10{width:83.33333%;}
+        &-9{width:75%;}
+        &-8{width:66.66666%;}
+        &-7{width:58.33333%;}
+        &-6{width:50%;}
+        &-5{width:41.66666%;}
+        &-4{width:33.33333%;}
+        &-3{width:25%;}
+        &-2{width:16.66666%;}
+        &-1{width:8.33333%;}
+      }
+    }
+    //Tabled small
+    @media(max-width:768px){
+      .xs{
+        &-12{width:100%;}
+        &-11{width:91.66666%;}
+        &-10{width:83.33333%;}
+        &-9{width:75%;}
+        &-8{width:66.66666%;}
+        &-7{width:58.33333%;}
+        &-6{width:50%;}
+        &-5{width:41.66666%;}
+        &-4{width:33.33333%;}
+        &-3{width:25%;}
+        &-2{width:16.66666%;}
+        &-1{width:8.33333%;}
+      }
+    }
+    //Mobile phone
+    @media(max-width:480px){
+      .xxs{
+        &-12{width:100%;}
+        &-11{width:91.66666%;}
+        &-10{width:83.33333%;}
+        &-9{width:75%;}
+        &-8{width:66.66666%;}
+        &-7{width:58.33333%;}
+        &-6{width:50%;}
+        &-5{width:41.66666%;}
+        &-4{width:33.33333%;}
+        &-3{width:25%;}
+        &-2{width:16.66666%;}
+        &-1{width:8.33333%;}
+      }
+    }
+
+  //Buttons--------------------
+  .btn{
+    padding: 15px;
+    box-sizing: border-box;
+    &-md{
+      width:270px;
+      @extend .btn;
+      &-r{
+        border-radius:10px;
+        @extend .btn-md;
+      }
+    }
+    &-sm{
+      width:170px;
+      @extend .btn;
+      &-r{
+        border-radius:10px;
+        @extend .btn-md;
+      }
+    }
+    &-full{
+      width:100%;
+      @extend .btn;
+      &-r{
+        border-radius:10px;
+        @extend .btn-md;
+      }
+    }
+  }
+
+//End BGS css templates
+
+#masthead{
+    background-color: transparent;
+    border-bottom:1px solid #181818;
+}

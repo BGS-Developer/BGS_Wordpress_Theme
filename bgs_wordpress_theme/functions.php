@@ -122,6 +122,8 @@ add_action( 'widgets_init', 'bgs_wordpress_theme_widgets_init' );
 function bgs_wordpress_theme_scripts() {
 	wp_enqueue_style( 'bgs_wordpress_theme-style', get_stylesheet_uri() );
 
+	wp_enqueue_style( 'main_css', get_template_directory_uri() . '/css/main.css');
+
 	wp_enqueue_script( 'bgs_wordpress_theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'bgs_wordpress_theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
